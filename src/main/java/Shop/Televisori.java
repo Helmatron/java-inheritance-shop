@@ -7,17 +7,15 @@ public class Televisori extends Prodotto {
 	private int base;
 	private int heigth;
 	private int depth;
-	private boolean smart;
+	private String smart;
 	
-	public Televisori(String name, String brand, double price,
-			int sizeInch, int base, int heigth, int depth, boolean smart) {
-		super(name, brand, price);
+	public Televisori() {
 		
-		this.sizeInch = sizeInch;
-		this.base = base;
-		this.heigth = heigth;
-		this.depth = depth;
-		this.smart = smart;
+		this.sizeInch = 0;
+		this.base = 0;
+		this.heigth = 0;
+		this.depth = 0;
+		this.smart = null;
 	}
 	
 	/*
@@ -55,13 +53,23 @@ public class Televisori extends Prodotto {
 	public void setDepth(int depth) {
 		this.depth = depth;
 	}
-
-	public boolean isSmart() {
+	
+	public String getSmart() {
 		return smart;
 	}
 
-	public void setSmart(boolean smart) {
+	public void setSmart(String smart) {
 		this.smart = smart;
+	}
+
+	@Override
+	public String toString() {
+
+		return "DATI DEL TELEVISORE"
+		+ "\n" + super.toString()
+		+ "\nDimensione schermo: " + getSizeInch() + " pollici"
+		+ "\nDimensioni: " + getBase() + " x " + getDepth() + " x h" + getHeigth() + " cm"
+		+ "\nFunzionalità Smart: " + getSmart();
 	}
 
 	

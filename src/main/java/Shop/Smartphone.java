@@ -8,6 +8,7 @@ public class Smartphone extends Prodotto {
 	private int memorystorage;
 	
 	public Smartphone() {
+		
 		imei =  (long) (Math.random() * (999999999 - 1) + 1);
 		memorystorage = 0;
 	}
@@ -41,6 +42,7 @@ public class Smartphone extends Prodotto {
 		return memorystorage;
 	}
 
+	
 	public void setMemorystorage(int memorystorage) {
 		this.memorystorage = memorystorage;
 	}
