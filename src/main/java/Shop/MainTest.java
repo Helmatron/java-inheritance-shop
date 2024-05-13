@@ -11,13 +11,20 @@ public class MainTest {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Inserire il nome del prodotto");
 		String name = input.nextLine();
+		System.out.println("Inserire codice imei");
+		long imei = input.nextLong();
 		
-		// test sul costruttore
-		Smartphone dati = new Smartphone("Iphone 12 pro", null, 0, 0, 128);
+		// Test costruttore con parametri
+		Smartphone dati = new Smartphone("Iphone 13 pro", null, 120, 66546645, 128);
 		
+		// test sul costruttore no args
+		// Smartphone dati = new Smartphone("Iphone 13 pro", null, 120);
 		
+		dati.setImei(imei);
 		dati.setName(name);
+		System.out.println(dati.getImei());
 		System.out.println(dati.getName());
+		System.out.println(dati.getPrice() + " €");
 		System.out.println(dati.getMemorystorage() + " GB");
 		// è possibile generare il codice una sola volta alla creazione
 		// di un nuovo prodotto e assegnarlo in modo che non muti più?
