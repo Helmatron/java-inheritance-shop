@@ -65,7 +65,7 @@ public class Carrello {
 			System.out.println("Inserire il colore delle Cuffie");
 			c.setColor(input.nextLine());
 			System.out.println("Hanno funzionalità Wireless?");
-			System.out.println("rispondere 'si' o 'no'");
+			//System.out.println("rispondere 'si' o 'no'");
 			c.setWireless(input.nextLine());
 			
 			System.out.println(c.toString());

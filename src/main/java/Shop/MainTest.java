@@ -15,7 +15,7 @@ public class MainTest {
 		long imei = input.nextLong();
 		
 		// Test costruttore con parametri
-		Smartphone dati = new Smartphone("Iphone 13 pro", null, 120, 66546645, 128);
+		Smartphone dati = new Smartphone();
 		
 		// test sul costruttore no args
 		// Smartphone dati = new Smartphone("Iphone 13 pro", null, 120);
